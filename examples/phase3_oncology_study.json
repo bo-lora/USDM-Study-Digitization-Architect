@@ -1,0 +1,2565 @@
+{
+  "study": {
+    "id": "Study_1",
+    "name": "XYZ-ONCO-2025-001",
+    "description": "A Phase III, Randomized, Double-Blind, Placebo-Controlled Study of Compound-X in Combination with Standard of Care Chemotherapy in Subjects with Advanced Non-Small Cell Lung Cancer",
+    "label": "Phase III NSCLC Study",
+    "versions": [
+      {
+        "id": "StudyVersion_1",
+        "extensionAttributes": [],
+        "versionIdentifier": "1.0",
+        "rationale": "Original protocol",
+        "documentVersionIds": [],
+        "dateValues": [],
+        "amendments": [],
+        "businessTherapeuticAreas": [
+          {
+            "id": "Code_1",
+            "extensionAttributes": [],
+            "code": "ONCOLOGY",
+            "codeSystem": "SPONSOR",
+            "codeSystemVersion": "1",
+            "decode": "Oncology",
+            "instanceType": "Code"
+          }
+        ],
+        "studyIdentifiers": [
+          {
+            "id": "StudyIdentifier_1",
+            "extensionAttributes": [],
+            "text": "XYZ-ONCO-2025-001",
+            "scopeId": "Organization_1",
+            "instanceType": "StudyIdentifier"
+          },
+          {
+            "id": "StudyIdentifier_2",
+            "extensionAttributes": [],
+            "text": "NCT09876543",
+            "scopeId": "Organization_2",
+            "instanceType": "StudyIdentifier"
+          }
+        ],
+        "referenceIdentifiers": [],
+        "studyDesigns": [
+          {
+            "id": "InterventionalStudyDesign_1",
+            "extensionAttributes": [],
+            "name": "DESIGN_1",
+            "label": "Phase III NSCLC Study Design",
+            "description": "Randomized, double-blind, placebo-controlled, parallel group design evaluating Compound-X plus SoC vs Placebo plus SoC in advanced NSCLC",
+            "studyType": {
+              "id": "Code_100",
+              "extensionAttributes": [],
+              "code": "C98388",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Interventional Study",
+              "instanceType": "Code"
+            },
+            "studyPhase": {
+              "id": "AliasCode_1",
+              "extensionAttributes": [],
+              "standardCode": {
+                "id": "Code_101",
+                "extensionAttributes": [],
+                "code": "C49686",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "Phase III Trial",
+                "instanceType": "Code"
+              },
+              "standardCodeAliases": [],
+              "instanceType": "AliasCode"
+            },
+            "therapeuticAreas": [
+              {
+                "id": "Code_102",
+                "extensionAttributes": [],
+                "code": "ONCOLOGY",
+                "codeSystem": "SPONSOR",
+                "codeSystemVersion": "1",
+                "decode": "Thoracic Oncology",
+                "instanceType": "Code"
+              }
+            ],
+            "characteristics": [],
+            "encounters": [
+              {
+                "id": "Encounter_1",
+                "extensionAttributes": [],
+                "name": "SCRN_V1",
+                "label": "Screening Visit 1",
+                "description": "Initial screening visit (Day -28 to Day -15)",
+                "type": {
+                  "id": "Code_200",
+                  "extensionAttributes": [],
+                  "code": "C25716",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Visit",
+                  "instanceType": "Code"
+                },
+                "previousId": null,
+                "nextId": "Encounter_2",
+                "scheduledAtId": null,
+                "environmentalSettings": [
+                  {
+                    "id": "Code_201",
+                    "extensionAttributes": [],
+                    "code": "C211570",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Clinic",
+                    "instanceType": "Code"
+                  }
+                ],
+                "contactModes": [
+                  {
+                    "id": "Code_202",
+                    "extensionAttributes": [],
+                    "code": "C175574",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "In Person",
+                    "instanceType": "Code"
+                  }
+                ],
+                "transitionStartRule": null,
+                "transitionEndRule": null,
+                "notes": [],
+                "instanceType": "Encounter"
+              },
+              {
+                "id": "Encounter_2",
+                "extensionAttributes": [],
+                "name": "SCRN_V2",
+                "label": "Screening Visit 2",
+                "description": "Second screening visit (Day -14 to Day -1)",
+                "type": {
+                  "id": "Code_203",
+                  "extensionAttributes": [],
+                  "code": "C25716",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Visit",
+                  "instanceType": "Code"
+                },
+                "previousId": "Encounter_1",
+                "nextId": "Encounter_3",
+                "scheduledAtId": null,
+                "environmentalSettings": [
+                  {
+                    "id": "Code_204",
+                    "extensionAttributes": [],
+                    "code": "C211570",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Clinic",
+                    "instanceType": "Code"
+                  }
+                ],
+                "contactModes": [
+                  {
+                    "id": "Code_205",
+                    "extensionAttributes": [],
+                    "code": "C175574",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "In Person",
+                    "instanceType": "Code"
+                  }
+                ],
+                "transitionStartRule": null,
+                "transitionEndRule": null,
+                "notes": [],
+                "instanceType": "Encounter"
+              },
+              {
+                "id": "Encounter_3",
+                "extensionAttributes": [],
+                "name": "RUNIN_V1",
+                "label": "Run-in Visit",
+                "description": "Run-in period visit (Day -7 to Day -1)",
+                "type": {
+                  "id": "Code_206",
+                  "extensionAttributes": [],
+                  "code": "C25716",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Visit",
+                  "instanceType": "Code"
+                },
+                "previousId": "Encounter_2",
+                "nextId": "Encounter_4",
+                "scheduledAtId": null,
+                "environmentalSettings": [
+                  {
+                    "id": "Code_207",
+                    "extensionAttributes": [],
+                    "code": "C211570",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Clinic",
+                    "instanceType": "Code"
+                  }
+                ],
+                "contactModes": [
+                  {
+                    "id": "Code_208",
+                    "extensionAttributes": [],
+                    "code": "C175574",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "In Person",
+                    "instanceType": "Code"
+                  }
+                ],
+                "transitionStartRule": null,
+                "transitionEndRule": null,
+                "notes": [],
+                "instanceType": "Encounter"
+              },
+              {
+                "id": "Encounter_4",
+                "extensionAttributes": [],
+                "name": "TRT_C1D1",
+                "label": "Treatment Cycle 1 Day 1",
+                "description": "First treatment cycle, Day 1 (randomization and first dose)",
+                "type": {
+                  "id": "Code_209",
+                  "extensionAttributes": [],
+                  "code": "C25716",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Visit",
+                  "instanceType": "Code"
+                },
+                "previousId": "Encounter_3",
+                "nextId": "Encounter_5",
+                "scheduledAtId": null,
+                "environmentalSettings": [
+                  {
+                    "id": "Code_210",
+                    "extensionAttributes": [],
+                    "code": "C211570",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Clinic",
+                    "instanceType": "Code"
+                  }
+                ],
+                "contactModes": [
+                  {
+                    "id": "Code_211",
+                    "extensionAttributes": [],
+                    "code": "C175574",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "In Person",
+                    "instanceType": "Code"
+                  }
+                ],
+                "transitionStartRule": null,
+                "transitionEndRule": null,
+                "notes": [],
+                "instanceType": "Encounter"
+              },
+              {
+                "id": "Encounter_5",
+                "extensionAttributes": [],
+                "name": "TRT_C1D15",
+                "label": "Treatment Cycle 1 Day 15",
+                "description": "First treatment cycle, Day 15 assessment",
+                "type": {
+                  "id": "Code_212",
+                  "extensionAttributes": [],
+                  "code": "C25716",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Visit",
+                  "instanceType": "Code"
+                },
+                "previousId": "Encounter_4",
+                "nextId": "Encounter_6",
+                "scheduledAtId": null,
+                "environmentalSettings": [
+                  {
+                    "id": "Code_213",
+                    "extensionAttributes": [],
+                    "code": "C211570",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Clinic",
+                    "instanceType": "Code"
+                  }
+                ],
+                "contactModes": [
+                  {
+                    "id": "Code_214",
+                    "extensionAttributes": [],
+                    "code": "C175574",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "In Person",
+                    "instanceType": "Code"
+                  }
+                ],
+                "transitionStartRule": null,
+                "transitionEndRule": null,
+                "notes": [],
+                "instanceType": "Encounter"
+              },
+              {
+                "id": "Encounter_6",
+                "extensionAttributes": [],
+                "name": "TRT_C2PLUS",
+                "label": "Treatment Cycle 2+ Day 1",
+                "description": "Subsequent treatment cycles, Day 1 (every 21 days)",
+                "type": {
+                  "id": "Code_215",
+                  "extensionAttributes": [],
+                  "code": "C25716",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Visit",
+                  "instanceType": "Code"
+                },
+                "previousId": "Encounter_5",
+                "nextId": "Encounter_7",
+                "scheduledAtId": null,
+                "environmentalSettings": [
+                  {
+                    "id": "Code_216",
+                    "extensionAttributes": [],
+                    "code": "C211570",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Clinic",
+                    "instanceType": "Code"
+                  }
+                ],
+                "contactModes": [
+                  {
+                    "id": "Code_217",
+                    "extensionAttributes": [],
+                    "code": "C175574",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "In Person",
+                    "instanceType": "Code"
+                  }
+                ],
+                "transitionStartRule": null,
+                "transitionEndRule": null,
+                "notes": [],
+                "instanceType": "Encounter"
+              },
+              {
+                "id": "Encounter_7",
+                "extensionAttributes": [],
+                "name": "FU_V1",
+                "label": "Safety Follow-up Visit",
+                "description": "Safety follow-up visit (30 days post last dose)",
+                "type": {
+                  "id": "Code_218",
+                  "extensionAttributes": [],
+                  "code": "C25716",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Visit",
+                  "instanceType": "Code"
+                },
+                "previousId": "Encounter_6",
+                "nextId": null,
+                "scheduledAtId": null,
+                "environmentalSettings": [
+                  {
+                    "id": "Code_219",
+                    "extensionAttributes": [],
+                    "code": "C211570",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Clinic",
+                    "instanceType": "Code"
+                  }
+                ],
+                "contactModes": [
+                  {
+                    "id": "Code_220",
+                    "extensionAttributes": [],
+                    "code": "C175574",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "In Person",
+                    "instanceType": "Code"
+                  }
+                ],
+                "transitionStartRule": null,
+                "transitionEndRule": null,
+                "notes": [],
+                "instanceType": "Encounter"
+              }
+            ],
+            "activities": [
+              {
+                "id": "Activity_1",
+                "extensionAttributes": [],
+                "name": "Informed Consent",
+                "label": "Informed Consent",
+                "description": "Obtain written informed consent",
+                "previousId": null,
+                "nextId": "Activity_2",
+                "childIds": [],
+                "definedProcedures": [],
+                "biomedicalConceptIds": [],
+                "bcCategoryIds": [],
+                "bcSurrogateIds": [],
+                "timelineId": null,
+                "notes": [],
+                "instanceType": "Activity"
+              },
+              {
+                "id": "Activity_2",
+                "extensionAttributes": [],
+                "name": "Eligibility Assessment",
+                "label": "Eligibility Assessment",
+                "description": "Evaluate inclusion and exclusion criteria",
+                "previousId": "Activity_1",
+                "nextId": "Activity_3",
+                "childIds": [],
+                "definedProcedures": [],
+                "biomedicalConceptIds": [],
+                "bcCategoryIds": [],
+                "bcSurrogateIds": [],
+                "timelineId": null,
+                "notes": [],
+                "instanceType": "Activity"
+              },
+              {
+                "id": "Activity_3",
+                "extensionAttributes": [],
+                "name": "Demographics",
+                "label": "Demographics",
+                "description": "Collect demographic information",
+                "previousId": "Activity_2",
+                "nextId": "Activity_4",
+                "childIds": [],
+                "definedProcedures": [],
+                "biomedicalConceptIds": [
+                  "BiomedicalConcept_1",
+                  "BiomedicalConcept_2"
+                ],
+                "bcCategoryIds": [],
+                "bcSurrogateIds": [],
+                "timelineId": null,
+                "notes": [],
+                "instanceType": "Activity"
+              },
+              {
+                "id": "Activity_4",
+                "extensionAttributes": [],
+                "name": "Medical History",
+                "label": "Medical History",
+                "description": "Collect medical and surgical history",
+                "previousId": "Activity_3",
+                "nextId": "Activity_5",
+                "childIds": [],
+                "definedProcedures": [],
+                "biomedicalConceptIds": [],
+                "bcCategoryIds": [],
+                "bcSurrogateIds": [],
+                "timelineId": null,
+                "notes": [],
+                "instanceType": "Activity"
+              },
+              {
+                "id": "Activity_5",
+                "extensionAttributes": [],
+                "name": "Physical Examination",
+                "label": "Physical Examination",
+                "description": "Perform complete physical examination",
+                "previousId": "Activity_4",
+                "nextId": "Activity_6",
+                "childIds": [],
+                "definedProcedures": [
+                  {
+                    "id": "Procedure_1",
+                    "extensionAttributes": [],
+                    "name": "PE",
+                    "label": "Physical Exam",
+                    "description": "Complete physical examination",
+                    "procedureType": "Exam",
+                    "code": {
+                      "id": "Code_250",
+                      "extensionAttributes": [],
+                      "code": "55286-9",
+                      "codeSystem": "LOINC",
+                      "codeSystemVersion": "2.77",
+                      "decode": "Physical Examination",
+                      "instanceType": "Code"
+                    },
+                    "notes": [],
+                    "instanceType": "Procedure"
+                  }
+                ],
+                "biomedicalConceptIds": [],
+                "bcCategoryIds": [],
+                "bcSurrogateIds": [],
+                "timelineId": null,
+                "notes": [],
+                "instanceType": "Activity"
+              },
+              {
+                "id": "Activity_6",
+                "extensionAttributes": [],
+                "name": "Vital Signs",
+                "label": "Vital Signs",
+                "description": "Measure vital signs including blood pressure, heart rate, temperature, respiratory rate",
+                "previousId": "Activity_5",
+                "nextId": "Activity_7",
+                "childIds": [],
+                "definedProcedures": [],
+                "biomedicalConceptIds": [
+                  "BiomedicalConcept_3"
+                ],
+                "bcCategoryIds": [],
+                "bcSurrogateIds": [],
+                "timelineId": null,
+                "notes": [],
+                "instanceType": "Activity"
+              },
+              {
+                "id": "Activity_7",
+                "extensionAttributes": [],
+                "name": "Laboratory Tests",
+                "label": "Laboratory Tests",
+                "description": "Perform hematology, chemistry, and urinalysis panels",
+                "previousId": "Activity_6",
+                "nextId": "Activity_8",
+                "childIds": [],
+                "definedProcedures": [],
+                "biomedicalConceptIds": [],
+                "bcCategoryIds": [],
+                "bcSurrogateIds": [],
+                "timelineId": null,
+                "notes": [],
+                "instanceType": "Activity"
+              },
+              {
+                "id": "Activity_8",
+                "extensionAttributes": [],
+                "name": "ECG",
+                "label": "12-Lead ECG",
+                "description": "Perform 12-lead electrocardiogram",
+                "previousId": "Activity_7",
+                "nextId": "Activity_9",
+                "childIds": [],
+                "definedProcedures": [
+                  {
+                    "id": "Procedure_2",
+                    "extensionAttributes": [],
+                    "name": "ECG",
+                    "label": "12-Lead ECG",
+                    "description": "Standard 12-lead electrocardiogram",
+                    "procedureType": "Exam",
+                    "code": {
+                      "id": "Code_251",
+                      "extensionAttributes": [],
+                      "code": "11524-6",
+                      "codeSystem": "LOINC",
+                      "codeSystemVersion": "2.77",
+                      "decode": "EKG study",
+                      "instanceType": "Code"
+                    },
+                    "notes": [],
+                    "instanceType": "Procedure"
+                  }
+                ],
+                "biomedicalConceptIds": [],
+                "bcCategoryIds": [],
+                "bcSurrogateIds": [],
+                "timelineId": null,
+                "notes": [],
+                "instanceType": "Activity"
+              },
+              {
+                "id": "Activity_9",
+                "extensionAttributes": [],
+                "name": "Tumor Assessment",
+                "label": "Tumor Assessment",
+                "description": "Perform tumor assessment per RECIST v1.1 criteria",
+                "previousId": "Activity_8",
+                "nextId": "Activity_10",
+                "childIds": [],
+                "definedProcedures": [],
+                "biomedicalConceptIds": [
+                  "BiomedicalConcept_4"
+                ],
+                "bcCategoryIds": [],
+                "bcSurrogateIds": [],
+                "timelineId": null,
+                "notes": [],
+                "instanceType": "Activity"
+              },
+              {
+                "id": "Activity_10",
+                "extensionAttributes": [],
+                "name": "Study Drug Administration",
+                "label": "Study Drug Administration",
+                "description": "Administer study drug (Compound-X or Placebo) and standard of care chemotherapy",
+                "previousId": "Activity_9",
+                "nextId": "Activity_11",
+                "childIds": [],
+                "definedProcedures": [],
+                "biomedicalConceptIds": [],
+                "bcCategoryIds": [],
+                "bcSurrogateIds": [],
+                "timelineId": null,
+                "notes": [],
+                "instanceType": "Activity"
+              },
+              {
+                "id": "Activity_11",
+                "extensionAttributes": [],
+                "name": "Adverse Event Assessment",
+                "label": "Adverse Event Assessment",
+                "description": "Evaluate and record adverse events using CTCAE v5.0",
+                "previousId": "Activity_10",
+                "nextId": "Activity_12",
+                "childIds": [],
+                "definedProcedures": [],
+                "biomedicalConceptIds": [],
+                "bcCategoryIds": [],
+                "bcSurrogateIds": [],
+                "timelineId": null,
+                "notes": [],
+                "instanceType": "Activity"
+              },
+              {
+                "id": "Activity_12",
+                "extensionAttributes": [],
+                "name": "Survival Follow-up",
+                "label": "Survival Follow-up",
+                "description": "Assess overall survival status every 12 weeks after end of treatment",
+                "previousId": "Activity_11",
+                "nextId": null,
+                "childIds": [],
+                "definedProcedures": [],
+                "biomedicalConceptIds": [],
+                "bcCategoryIds": [],
+                "bcSurrogateIds": [],
+                "timelineId": null,
+                "notes": [],
+                "instanceType": "Activity"
+              }
+            ],
+            "arms": [
+              {
+                "id": "StudyArm_1",
+                "extensionAttributes": [],
+                "name": "COMPX_SOC",
+                "label": "Compound-X + SoC",
+                "description": "Compound-X in combination with standard of care platinum-based doublet chemotherapy",
+                "type": {
+                  "id": "Code_300",
+                  "extensionAttributes": [],
+                  "code": "C174266",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Investigational Arm",
+                  "instanceType": "Code"
+                },
+                "dataOriginDescription": "Data collected from randomized subjects",
+                "dataOriginType": {
+                  "id": "Code_301",
+                  "extensionAttributes": [],
+                  "code": "C188866",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Data Generated Within Study",
+                  "instanceType": "Code"
+                },
+                "populationIds": [],
+                "notes": [],
+                "instanceType": "StudyArm"
+              },
+              {
+                "id": "StudyArm_2",
+                "extensionAttributes": [],
+                "name": "PBO_SOC",
+                "label": "Placebo + SoC",
+                "description": "Matching placebo in combination with standard of care platinum-based doublet chemotherapy",
+                "type": {
+                  "id": "Code_302",
+                  "extensionAttributes": [],
+                  "code": "C174267",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Placebo Control Arm",
+                  "instanceType": "Code"
+                },
+                "dataOriginDescription": "Data collected from randomized subjects",
+                "dataOriginType": {
+                  "id": "Code_303",
+                  "extensionAttributes": [],
+                  "code": "C188866",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Data Generated Within Study",
+                  "instanceType": "Code"
+                },
+                "populationIds": [],
+                "notes": [],
+                "instanceType": "StudyArm"
+              }
+            ],
+            "studyCells": [
+              {
+                "id": "StudyCell_1",
+                "extensionAttributes": [],
+                "armId": "StudyArm_1",
+                "epochId": "StudyEpoch_1",
+                "elementIds": [
+                  "StudyElement_1"
+                ],
+                "instanceType": "StudyCell"
+              },
+              {
+                "id": "StudyCell_2",
+                "extensionAttributes": [],
+                "armId": "StudyArm_1",
+                "epochId": "StudyEpoch_2",
+                "elementIds": [
+                  "StudyElement_2"
+                ],
+                "instanceType": "StudyCell"
+              },
+              {
+                "id": "StudyCell_3",
+                "extensionAttributes": [],
+                "armId": "StudyArm_1",
+                "epochId": "StudyEpoch_3",
+                "elementIds": [
+                  "StudyElement_3"
+                ],
+                "instanceType": "StudyCell"
+              },
+              {
+                "id": "StudyCell_4",
+                "extensionAttributes": [],
+                "armId": "StudyArm_1",
+                "epochId": "StudyEpoch_4",
+                "elementIds": [
+                  "StudyElement_5"
+                ],
+                "instanceType": "StudyCell"
+              },
+              {
+                "id": "StudyCell_5",
+                "extensionAttributes": [],
+                "armId": "StudyArm_2",
+                "epochId": "StudyEpoch_1",
+                "elementIds": [
+                  "StudyElement_1"
+                ],
+                "instanceType": "StudyCell"
+              },
+              {
+                "id": "StudyCell_6",
+                "extensionAttributes": [],
+                "armId": "StudyArm_2",
+                "epochId": "StudyEpoch_2",
+                "elementIds": [
+                  "StudyElement_2"
+                ],
+                "instanceType": "StudyCell"
+              },
+              {
+                "id": "StudyCell_7",
+                "extensionAttributes": [],
+                "armId": "StudyArm_2",
+                "epochId": "StudyEpoch_3",
+                "elementIds": [
+                  "StudyElement_4"
+                ],
+                "instanceType": "StudyCell"
+              },
+              {
+                "id": "StudyCell_8",
+                "extensionAttributes": [],
+                "armId": "StudyArm_2",
+                "epochId": "StudyEpoch_4",
+                "elementIds": [
+                  "StudyElement_5"
+                ],
+                "instanceType": "StudyCell"
+              }
+            ],
+            "rationale": "Randomized controlled design selected to provide robust efficacy and safety evidence for regulatory submission",
+            "epochs": [
+              {
+                "id": "StudyEpoch_1",
+                "extensionAttributes": [],
+                "name": "SCREENING",
+                "label": "Screening",
+                "description": "Screening period (up to 28 days before randomization)",
+                "type": {
+                  "id": "Code_310",
+                  "extensionAttributes": [],
+                  "code": "C202487",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Screening Epoch",
+                  "instanceType": "Code"
+                },
+                "previousId": null,
+                "nextId": "StudyEpoch_2",
+                "notes": [],
+                "instanceType": "StudyEpoch"
+              },
+              {
+                "id": "StudyEpoch_2",
+                "extensionAttributes": [],
+                "name": "RUN_IN",
+                "label": "Run-in",
+                "description": "Run-in period (7 days prior to randomization)",
+                "type": {
+                  "id": "Code_311",
+                  "extensionAttributes": [],
+                  "code": "C198370",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Run-In Epoch",
+                  "instanceType": "Code"
+                },
+                "previousId": "StudyEpoch_1",
+                "nextId": "StudyEpoch_3",
+                "notes": [],
+                "instanceType": "StudyEpoch"
+              },
+              {
+                "id": "StudyEpoch_3",
+                "extensionAttributes": [],
+                "name": "TREATMENT",
+                "label": "Treatment",
+                "description": "Active treatment period with 21-day cycles until disease progression or unacceptable toxicity",
+                "type": {
+                  "id": "Code_312",
+                  "extensionAttributes": [],
+                  "code": "C101526",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Treatment Epoch",
+                  "instanceType": "Code"
+                },
+                "previousId": "StudyEpoch_2",
+                "nextId": "StudyEpoch_4",
+                "notes": [],
+                "instanceType": "StudyEpoch"
+              },
+              {
+                "id": "StudyEpoch_4",
+                "extensionAttributes": [],
+                "name": "FOLLOW_UP",
+                "label": "Follow-up",
+                "description": "Safety and survival follow-up period (30 days post last dose and every 12 weeks thereafter)",
+                "type": {
+                  "id": "Code_313",
+                  "extensionAttributes": [],
+                  "code": "C202578",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Follow-Up Epoch",
+                  "instanceType": "Code"
+                },
+                "previousId": "StudyEpoch_3",
+                "nextId": null,
+                "notes": [],
+                "instanceType": "StudyEpoch"
+              }
+            ],
+            "elements": [
+              {
+                "id": "StudyElement_1",
+                "extensionAttributes": [],
+                "name": "EL_SCREENING",
+                "label": "Screening",
+                "description": "Screening assessments and eligibility evaluation",
+                "transitionStartRule": {
+                  "id": "TransitionRule_1",
+                  "extensionAttributes": [],
+                  "name": "TR_SCRN_START",
+                  "label": null,
+                  "description": null,
+                  "text": "Informed consent obtained",
+                  "instanceType": "TransitionRule"
+                },
+                "transitionEndRule": {
+                  "id": "TransitionRule_2",
+                  "extensionAttributes": [],
+                  "name": "TR_SCRN_END",
+                  "label": null,
+                  "description": null,
+                  "text": "All screening criteria met",
+                  "instanceType": "TransitionRule"
+                },
+                "studyInterventionIds": [],
+                "notes": [],
+                "instanceType": "StudyElement"
+              },
+              {
+                "id": "StudyElement_2",
+                "extensionAttributes": [],
+                "name": "EL_RUNIN",
+                "label": "Run-in",
+                "description": "Run-in period to confirm baseline stability",
+                "transitionStartRule": null,
+                "transitionEndRule": {
+                  "id": "TransitionRule_3",
+                  "extensionAttributes": [],
+                  "name": "TR_RUNIN_END",
+                  "label": null,
+                  "description": null,
+                  "text": "Baseline assessments completed and eligibility confirmed",
+                  "instanceType": "TransitionRule"
+                },
+                "studyInterventionIds": [],
+                "notes": [],
+                "instanceType": "StudyElement"
+              },
+              {
+                "id": "StudyElement_3",
+                "extensionAttributes": [],
+                "name": "EL_ACTIVE_TRT",
+                "label": "Active Treatment",
+                "description": "Compound-X in combination with standard of care chemotherapy (21-day cycles)",
+                "transitionStartRule": null,
+                "transitionEndRule": {
+                  "id": "TransitionRule_4",
+                  "extensionAttributes": [],
+                  "name": "TR_ACTIVE_END",
+                  "label": null,
+                  "description": null,
+                  "text": "Disease progression, unacceptable toxicity, or withdrawal of consent",
+                  "instanceType": "TransitionRule"
+                },
+                "studyInterventionIds": [
+                  "StudyIntervention_1",
+                  "StudyIntervention_3"
+                ],
+                "notes": [],
+                "instanceType": "StudyElement"
+              },
+              {
+                "id": "StudyElement_4",
+                "extensionAttributes": [],
+                "name": "EL_PLACEBO_TRT",
+                "label": "Placebo Treatment",
+                "description": "Matching placebo in combination with standard of care chemotherapy (21-day cycles)",
+                "transitionStartRule": null,
+                "transitionEndRule": {
+                  "id": "TransitionRule_5",
+                  "extensionAttributes": [],
+                  "name": "TR_PLACEBO_END",
+                  "label": null,
+                  "description": null,
+                  "text": "Disease progression, unacceptable toxicity, or withdrawal of consent",
+                  "instanceType": "TransitionRule"
+                },
+                "studyInterventionIds": [
+                  "StudyIntervention_2",
+                  "StudyIntervention_3"
+                ],
+                "notes": [],
+                "instanceType": "StudyElement"
+              },
+              {
+                "id": "StudyElement_5",
+                "extensionAttributes": [],
+                "name": "EL_SAFETY_FU",
+                "label": "Safety Follow-up",
+                "description": "Safety follow-up period for adverse event monitoring and survival assessment",
+                "transitionStartRule": null,
+                "transitionEndRule": {
+                  "id": "TransitionRule_6",
+                  "extensionAttributes": [],
+                  "name": "TR_FU_END",
+                  "label": null,
+                  "description": null,
+                  "text": "Death, loss to follow-up, or study completion",
+                  "instanceType": "TransitionRule"
+                },
+                "studyInterventionIds": [],
+                "notes": [],
+                "instanceType": "StudyElement"
+              }
+            ],
+            "estimands": [],
+            "indications": [
+              {
+                "id": "Indication_1",
+                "extensionAttributes": [],
+                "name": "NSCLC",
+                "label": "Non-Small Cell Lung Cancer",
+                "description": "Advanced non-small cell lung cancer (Stage IIIB/IV)",
+                "codes": [
+                  {
+                    "id": "Code_320",
+                    "extensionAttributes": [],
+                    "code": "254637007",
+                    "codeSystem": "SNOMED",
+                    "codeSystemVersion": "January 31, 2024",
+                    "decode": "Non-small cell lung cancer",
+                    "instanceType": "Code"
+                  }
+                ],
+                "isRareDisease": false,
+                "notes": [],
+                "instanceType": "Indication"
+              }
+            ],
+            "studyInterventionIds": [
+              "StudyIntervention_1",
+              "StudyIntervention_2",
+              "StudyIntervention_3"
+            ],
+            "objectives": [
+              {
+                "id": "Objective_1",
+                "extensionAttributes": [],
+                "name": "OBJ_PFS",
+                "label": "Primary PFS Objective",
+                "description": "Progression-free survival",
+                "text": "To compare the progression-free survival (PFS) of Compound-X in combination with standard of care chemotherapy versus placebo in combination with standard of care chemotherapy in subjects with advanced NSCLC.",
+                "dictionaryId": null,
+                "notes": [],
+                "instanceType": "Objective",
+                "level": {
+                  "id": "Code_400",
+                  "extensionAttributes": [],
+                  "code": "C85826",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Trial Primary Objective",
+                  "instanceType": "Code"
+                },
+                "endpoints": [
+                  {
+                    "id": "Endpoint_1",
+                    "extensionAttributes": [],
+                    "name": "EP_PFS",
+                    "label": "PFS Endpoint",
+                    "description": "Progression-free survival per RECIST v1.1",
+                    "text": "Progression-free survival (PFS) defined as the time from randomization to first documented disease progression per RECIST v1.1 or death from any cause, whichever occurs first, as assessed by blinded independent central review (BICR).",
+                    "dictionaryId": null,
+                    "notes": [],
+                    "instanceType": "Endpoint",
+                    "purpose": "Efficacy",
+                    "level": {
+                      "id": "Code_401",
+                      "extensionAttributes": [],
+                      "code": "C94496",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Primary Endpoint",
+                      "instanceType": "Code"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "Objective_2",
+                "extensionAttributes": [],
+                "name": "OBJ_OS",
+                "label": "Secondary OS Objective",
+                "description": "Overall survival",
+                "text": "To compare the overall survival (OS) of Compound-X in combination with standard of care chemotherapy versus placebo in combination with standard of care chemotherapy in subjects with advanced NSCLC.",
+                "dictionaryId": null,
+                "notes": [],
+                "instanceType": "Objective",
+                "level": {
+                  "id": "Code_402",
+                  "extensionAttributes": [],
+                  "code": "C85827",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Trial Secondary Objective",
+                  "instanceType": "Code"
+                },
+                "endpoints": [
+                  {
+                    "id": "Endpoint_2",
+                    "extensionAttributes": [],
+                    "name": "EP_OS",
+                    "label": "OS Endpoint",
+                    "description": "Overall survival",
+                    "text": "Overall survival (OS) defined as the time from randomization to death from any cause.",
+                    "dictionaryId": null,
+                    "notes": [],
+                    "instanceType": "Endpoint",
+                    "purpose": "Efficacy",
+                    "level": {
+                      "id": "Code_403",
+                      "extensionAttributes": [],
+                      "code": "C139173",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Secondary Endpoint",
+                      "instanceType": "Code"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "Objective_3",
+                "extensionAttributes": [],
+                "name": "OBJ_ORR",
+                "label": "Secondary ORR Objective",
+                "description": "Objective response rate",
+                "text": "To evaluate the objective response rate (ORR) of Compound-X in combination with standard of care chemotherapy versus placebo in combination with standard of care chemotherapy in subjects with advanced NSCLC.",
+                "dictionaryId": null,
+                "notes": [],
+                "instanceType": "Objective",
+                "level": {
+                  "id": "Code_404",
+                  "extensionAttributes": [],
+                  "code": "C85827",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Trial Secondary Objective",
+                  "instanceType": "Code"
+                },
+                "endpoints": [
+                  {
+                    "id": "Endpoint_3",
+                    "extensionAttributes": [],
+                    "name": "EP_ORR",
+                    "label": "ORR Endpoint",
+                    "description": "Objective response rate per RECIST v1.1",
+                    "text": "Objective response rate (ORR) defined as the proportion of subjects with confirmed complete response (CR) or partial response (PR) as best overall response per RECIST v1.1, as assessed by BICR.",
+                    "dictionaryId": null,
+                    "notes": [],
+                    "instanceType": "Endpoint",
+                    "purpose": "Efficacy",
+                    "level": {
+                      "id": "Code_405",
+                      "extensionAttributes": [],
+                      "code": "C139173",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Secondary Endpoint",
+                      "instanceType": "Code"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "Objective_4",
+                "extensionAttributes": [],
+                "name": "OBJ_DOR",
+                "label": "Secondary DOR Objective",
+                "description": "Duration of response",
+                "text": "To evaluate the duration of response (DOR) of Compound-X in combination with standard of care chemotherapy versus placebo in combination with standard of care chemotherapy in subjects with advanced NSCLC.",
+                "dictionaryId": null,
+                "notes": [],
+                "instanceType": "Objective",
+                "level": {
+                  "id": "Code_406",
+                  "extensionAttributes": [],
+                  "code": "C85827",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Trial Secondary Objective",
+                  "instanceType": "Code"
+                },
+                "endpoints": [
+                  {
+                    "id": "Endpoint_4",
+                    "extensionAttributes": [],
+                    "name": "EP_DOR",
+                    "label": "DOR Endpoint",
+                    "description": "Duration of response per RECIST v1.1",
+                    "text": "Duration of response (DOR) defined as the time from first documented CR or PR per RECIST v1.1 to first documented progression or death from any cause, as assessed by BICR.",
+                    "dictionaryId": null,
+                    "notes": [],
+                    "instanceType": "Endpoint",
+                    "purpose": "Efficacy",
+                    "level": {
+                      "id": "Code_407",
+                      "extensionAttributes": [],
+                      "code": "C139173",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Secondary Endpoint",
+                      "instanceType": "Code"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "Objective_5",
+                "extensionAttributes": [],
+                "name": "OBJ_BIOMARKER",
+                "label": "Exploratory Biomarker Objective",
+                "description": "Biomarker analysis",
+                "text": "To explore the association between potential predictive biomarkers (including PD-L1 expression, tumor mutational burden, and circulating tumor DNA) and clinical outcomes in subjects treated with Compound-X in combination with standard of care chemotherapy.",
+                "dictionaryId": null,
+                "notes": [],
+                "instanceType": "Objective",
+                "level": {
+                  "id": "Code_408",
+                  "extensionAttributes": [],
+                  "code": "C85828",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Trial Exploratory Objective",
+                  "instanceType": "Code"
+                },
+                "endpoints": [
+                  {
+                    "id": "Endpoint_5",
+                    "extensionAttributes": [],
+                    "name": "EP_BIOMARKER",
+                    "label": "Biomarker Endpoint",
+                    "description": "Biomarker-efficacy correlation",
+                    "text": "Correlation of PD-L1 expression (tumor proportion score), tumor mutational burden (TMB), and circulating tumor DNA (ctDNA) dynamics with PFS, OS, and ORR in each treatment arm.",
+                    "dictionaryId": null,
+                    "notes": [],
+                    "instanceType": "Endpoint",
+                    "purpose": "Biomarker",
+                    "level": {
+                      "id": "Code_409",
+                      "extensionAttributes": [],
+                      "code": "C139174",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Exploratory Endpoint",
+                      "instanceType": "Code"
+                    }
+                  }
+                ]
+              }
+            ],
+            "population": {
+              "id": "StudyDesignPopulation_1",
+              "extensionAttributes": [],
+              "name": "POP_NSCLC",
+              "label": "NSCLC Population",
+              "description": "Adults with advanced (Stage IIIB/IV) non-small cell lung cancer",
+              "includesHealthySubjects": false,
+              "plannedEnrollmentNumber": {
+                "id": "Range_1",
+                "extensionAttributes": [],
+                "minValue": {
+                  "id": "Quantity_1",
+                  "extensionAttributes": [],
+                  "value": 450.0,
+                  "unit": null,
+                  "instanceType": "Quantity"
+                },
+                "maxValue": {
+                  "id": "Quantity_2",
+                  "extensionAttributes": [],
+                  "value": 450.0,
+                  "unit": null,
+                  "instanceType": "Quantity"
+                },
+                "isApproximate": false,
+                "instanceType": "Range"
+              },
+              "plannedCompletionNumber": null,
+              "plannedSex": [],
+              "criterionIds": [
+                "EligibilityCriterion_1",
+                "EligibilityCriterion_2",
+                "EligibilityCriterion_3",
+                "EligibilityCriterion_4",
+                "EligibilityCriterion_5",
+                "EligibilityCriterion_6",
+                "EligibilityCriterion_7",
+                "EligibilityCriterion_8",
+                "EligibilityCriterion_9",
+                "EligibilityCriterion_10"
+              ],
+              "plannedAge": {
+                "id": "Range_2",
+                "extensionAttributes": [],
+                "minValue": {
+                  "id": "Quantity_3",
+                  "extensionAttributes": [],
+                  "value": 18.0,
+                  "unit": {
+                    "id": "AliasCode_50",
+                    "extensionAttributes": [],
+                    "standardCode": {
+                      "id": "Code_330",
+                      "extensionAttributes": [],
+                      "code": "C29848",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Year",
+                      "instanceType": "Code"
+                    },
+                    "standardCodeAliases": [],
+                    "instanceType": "AliasCode"
+                  },
+                  "instanceType": "Quantity"
+                },
+                "maxValue": {
+                  "id": "Quantity_4",
+                  "extensionAttributes": [],
+                  "value": 99.0,
+                  "unit": {
+                    "id": "AliasCode_51",
+                    "extensionAttributes": [],
+                    "standardCode": {
+                      "id": "Code_331",
+                      "extensionAttributes": [],
+                      "code": "C29848",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Year",
+                      "instanceType": "Code"
+                    },
+                    "standardCodeAliases": [],
+                    "instanceType": "AliasCode"
+                  },
+                  "instanceType": "Quantity"
+                },
+                "isApproximate": false,
+                "instanceType": "Range"
+              },
+              "notes": [],
+              "instanceType": "StudyDesignPopulation",
+              "cohorts": []
+            },
+            "eligibilityCriteria": [
+              {
+                "id": "EligibilityCriterion_1",
+                "extensionAttributes": [],
+                "name": "IN01",
+                "label": "I 01.",
+                "description": "Age requirement",
+                "category": {
+                  "id": "Code_500",
+                  "extensionAttributes": [],
+                  "code": "C25532",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Inclusion Criteria",
+                  "instanceType": "Code"
+                },
+                "identifier": "I 01.",
+                "criterionItemId": "EligibilityCriterionItem_1",
+                "nextId": null,
+                "previousId": null,
+                "notes": [],
+                "instanceType": "EligibilityCriterion"
+              },
+              {
+                "id": "EligibilityCriterion_2",
+                "extensionAttributes": [],
+                "name": "IN02",
+                "label": "I 02.",
+                "description": "NSCLC diagnosis",
+                "category": {
+                  "id": "Code_501",
+                  "extensionAttributes": [],
+                  "code": "C25532",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Inclusion Criteria",
+                  "instanceType": "Code"
+                },
+                "identifier": "I 02.",
+                "criterionItemId": "EligibilityCriterionItem_2",
+                "nextId": null,
+                "previousId": null,
+                "notes": [],
+                "instanceType": "EligibilityCriterion"
+              },
+              {
+                "id": "EligibilityCriterion_3",
+                "extensionAttributes": [],
+                "name": "IN03",
+                "label": "I 03.",
+                "description": "Measurable disease",
+                "category": {
+                  "id": "Code_502",
+                  "extensionAttributes": [],
+                  "code": "C25532",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Inclusion Criteria",
+                  "instanceType": "Code"
+                },
+                "identifier": "I 03.",
+                "criterionItemId": "EligibilityCriterionItem_3",
+                "nextId": null,
+                "previousId": null,
+                "notes": [],
+                "instanceType": "EligibilityCriterion"
+              },
+              {
+                "id": "EligibilityCriterion_4",
+                "extensionAttributes": [],
+                "name": "IN04",
+                "label": "I 04.",
+                "description": "ECOG performance status",
+                "category": {
+                  "id": "Code_503",
+                  "extensionAttributes": [],
+                  "code": "C25532",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Inclusion Criteria",
+                  "instanceType": "Code"
+                },
+                "identifier": "I 04.",
+                "criterionItemId": "EligibilityCriterionItem_4",
+                "nextId": null,
+                "previousId": null,
+                "notes": [],
+                "instanceType": "EligibilityCriterion"
+              },
+              {
+                "id": "EligibilityCriterion_5",
+                "extensionAttributes": [],
+                "name": "IN05",
+                "label": "I 05.",
+                "description": "Adequate organ function",
+                "category": {
+                  "id": "Code_504",
+                  "extensionAttributes": [],
+                  "code": "C25532",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Inclusion Criteria",
+                  "instanceType": "Code"
+                },
+                "identifier": "I 05.",
+                "criterionItemId": "EligibilityCriterionItem_5",
+                "nextId": null,
+                "previousId": null,
+                "notes": [],
+                "instanceType": "EligibilityCriterion"
+              },
+              {
+                "id": "EligibilityCriterion_6",
+                "extensionAttributes": [],
+                "name": "EX01",
+                "label": "E 01.",
+                "description": "Prior therapy",
+                "category": {
+                  "id": "Code_505",
+                  "extensionAttributes": [],
+                  "code": "C25370",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Exclusion Criteria",
+                  "instanceType": "Code"
+                },
+                "identifier": "E 01.",
+                "criterionItemId": "EligibilityCriterionItem_6",
+                "nextId": null,
+                "previousId": null,
+                "notes": [],
+                "instanceType": "EligibilityCriterion"
+              },
+              {
+                "id": "EligibilityCriterion_7",
+                "extensionAttributes": [],
+                "name": "EX02",
+                "label": "E 02.",
+                "description": "Active CNS metastases",
+                "category": {
+                  "id": "Code_506",
+                  "extensionAttributes": [],
+                  "code": "C25370",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Exclusion Criteria",
+                  "instanceType": "Code"
+                },
+                "identifier": "E 02.",
+                "criterionItemId": "EligibilityCriterionItem_7",
+                "nextId": null,
+                "previousId": null,
+                "notes": [],
+                "instanceType": "EligibilityCriterion"
+              },
+              {
+                "id": "EligibilityCriterion_8",
+                "extensionAttributes": [],
+                "name": "EX03",
+                "label": "E 03.",
+                "description": "Autoimmune disease",
+                "category": {
+                  "id": "Code_507",
+                  "extensionAttributes": [],
+                  "code": "C25370",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Exclusion Criteria",
+                  "instanceType": "Code"
+                },
+                "identifier": "E 03.",
+                "criterionItemId": "EligibilityCriterionItem_8",
+                "nextId": null,
+                "previousId": null,
+                "notes": [],
+                "instanceType": "EligibilityCriterion"
+              },
+              {
+                "id": "EligibilityCriterion_9",
+                "extensionAttributes": [],
+                "name": "EX04",
+                "label": "E 04.",
+                "description": "Prior immunotherapy",
+                "category": {
+                  "id": "Code_508",
+                  "extensionAttributes": [],
+                  "code": "C25370",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Exclusion Criteria",
+                  "instanceType": "Code"
+                },
+                "identifier": "E 04.",
+                "criterionItemId": "EligibilityCriterionItem_9",
+                "nextId": null,
+                "previousId": null,
+                "notes": [],
+                "instanceType": "EligibilityCriterion"
+              },
+              {
+                "id": "EligibilityCriterion_10",
+                "extensionAttributes": [],
+                "name": "EX05",
+                "label": "E 05.",
+                "description": "Known EGFR/ALK alterations",
+                "category": {
+                  "id": "Code_509",
+                  "extensionAttributes": [],
+                  "code": "C25370",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Exclusion Criteria",
+                  "instanceType": "Code"
+                },
+                "identifier": "E 05.",
+                "criterionItemId": "EligibilityCriterionItem_10",
+                "nextId": null,
+                "previousId": null,
+                "notes": [],
+                "instanceType": "EligibilityCriterion"
+              }
+            ],
+            "analysisPopulations": [],
+            "notes": [],
+            "instanceType": "InterventionalStudyDesign",
+            "subTypes": [
+              {
+                "id": "Code_340",
+                "extensionAttributes": [],
+                "code": "C49656",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "Treatment Study",
+                "instanceType": "Code"
+              }
+            ],
+            "model": {
+              "id": "Code_341",
+              "extensionAttributes": [],
+              "code": "C82639",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Parallel Study",
+              "instanceType": "Code"
+            },
+            "intentTypes": [
+              {
+                "id": "Code_342",
+                "extensionAttributes": [],
+                "code": "C49656",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "Treatment Study",
+                "instanceType": "Code"
+              }
+            ],
+            "blindingSchema": {
+              "id": "AliasCode_60",
+              "extensionAttributes": [],
+              "standardCode": {
+                "id": "Code_343",
+                "extensionAttributes": [],
+                "code": "C15228",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "Double Blind Study",
+                "instanceType": "Code"
+              },
+              "standardCodeAliases": [],
+              "instanceType": "AliasCode"
+            }
+          }
+        ],
+        "titles": [
+          {
+            "id": "StudyTitle_1",
+            "extensionAttributes": [],
+            "text": "Phase III Study of Compound-X plus SoC in Advanced NSCLC",
+            "type": {
+              "id": "Code_10",
+              "extensionAttributes": [],
+              "code": "C207615",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Brief Study Title",
+              "instanceType": "Code"
+            },
+            "instanceType": "StudyTitle"
+          },
+          {
+            "id": "StudyTitle_2",
+            "extensionAttributes": [],
+            "text": "A Phase III, Randomized, Double-Blind, Placebo-Controlled Study of Compound-X in Combination with Standard of Care Chemotherapy in Subjects with Advanced Non-Small Cell Lung Cancer",
+            "type": {
+              "id": "Code_11",
+              "extensionAttributes": [],
+              "code": "C207616",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Official Study Title",
+              "instanceType": "Code"
+            },
+            "instanceType": "StudyTitle"
+          }
+        ],
+        "eligibilityCriterionItems": [
+          {
+            "id": "EligibilityCriterionItem_1",
+            "extensionAttributes": [],
+            "name": "IN01_ITEM",
+            "label": null,
+            "description": null,
+            "text": "Participant must be at least 18 years of age at the time of signing the informed consent.",
+            "dictionaryId": null,
+            "notes": [],
+            "instanceType": "EligibilityCriterionItem"
+          },
+          {
+            "id": "EligibilityCriterionItem_2",
+            "extensionAttributes": [],
+            "name": "IN02_ITEM",
+            "label": null,
+            "description": null,
+            "text": "Histologically or cytologically confirmed diagnosis of Stage IIIB (not amenable to curative therapy) or Stage IV non-small cell lung cancer (squamous or non-squamous histology).",
+            "dictionaryId": null,
+            "notes": [],
+            "instanceType": "EligibilityCriterionItem"
+          },
+          {
+            "id": "EligibilityCriterionItem_3",
+            "extensionAttributes": [],
+            "name": "IN03_ITEM",
+            "label": null,
+            "description": null,
+            "text": "At least one measurable lesion per RECIST v1.1 criteria. Previously irradiated lesions are acceptable as target lesions only if there is documented progression of the lesion after irradiation.",
+            "dictionaryId": null,
+            "notes": [],
+            "instanceType": "EligibilityCriterionItem"
+          },
+          {
+            "id": "EligibilityCriterionItem_4",
+            "extensionAttributes": [],
+            "name": "IN04_ITEM",
+            "label": null,
+            "description": null,
+            "text": "Eastern Cooperative Oncology Group (ECOG) performance status of 0 or 1.",
+            "dictionaryId": null,
+            "notes": [],
+            "instanceType": "EligibilityCriterionItem"
+          },
+          {
+            "id": "EligibilityCriterionItem_5",
+            "extensionAttributes": [],
+            "name": "IN05_ITEM",
+            "label": null,
+            "description": null,
+            "text": "Adequate organ function as defined by: absolute neutrophil count >= 1500/uL, platelets >= 100,000/uL, hemoglobin >= 9.0 g/dL, serum creatinine <= 1.5x ULN or creatinine clearance >= 50 mL/min, total bilirubin <= 1.5x ULN, AST and ALT <= 2.5x ULN (or <= 5x ULN for subjects with liver metastases).",
+            "dictionaryId": null,
+            "notes": [],
+            "instanceType": "EligibilityCriterionItem"
+          },
+          {
+            "id": "EligibilityCriterionItem_6",
+            "extensionAttributes": [],
+            "name": "EX01_ITEM",
+            "label": null,
+            "description": null,
+            "text": "Prior systemic chemotherapy for advanced/metastatic NSCLC. Subjects who received adjuvant or neoadjuvant platinum-based chemotherapy and developed recurrence more than 6 months after completion are eligible.",
+            "dictionaryId": null,
+            "notes": [],
+            "instanceType": "EligibilityCriterionItem"
+          },
+          {
+            "id": "EligibilityCriterionItem_7",
+            "extensionAttributes": [],
+            "name": "EX02_ITEM",
+            "label": null,
+            "description": null,
+            "text": "Active or untreated central nervous system (CNS) metastases. Subjects with treated brain metastases that are clinically stable for at least 2 weeks and without requirement for systemic corticosteroids are eligible.",
+            "dictionaryId": null,
+            "notes": [],
+            "instanceType": "EligibilityCriterionItem"
+          },
+          {
+            "id": "EligibilityCriterionItem_8",
+            "extensionAttributes": [],
+            "name": "EX03_ITEM",
+            "label": null,
+            "description": null,
+            "text": "Active autoimmune disease requiring systemic immunosuppressive treatment within the past 2 years. Subjects with vitiligo, type 1 diabetes mellitus, hypothyroidism requiring only hormone replacement, or conditions not expected to recur are permitted.",
+            "dictionaryId": null,
+            "notes": [],
+            "instanceType": "EligibilityCriterionItem"
+          },
+          {
+            "id": "EligibilityCriterionItem_9",
+            "extensionAttributes": [],
+            "name": "EX04_ITEM",
+            "label": null,
+            "description": null,
+            "text": "Prior treatment with any anti-PD-1, anti-PD-L1, anti-PD-L2, anti-CTLA-4, or any other immunotherapy agent targeting immune checkpoint pathways.",
+            "dictionaryId": null,
+            "notes": [],
+            "instanceType": "EligibilityCriterionItem"
+          },
+          {
+            "id": "EligibilityCriterionItem_10",
+            "extensionAttributes": [],
+            "name": "EX05_ITEM",
+            "label": null,
+            "description": null,
+            "text": "Known EGFR sensitizing mutation or ALK translocation. Subjects with these genomic alterations should be directed to appropriate targeted therapy.",
+            "dictionaryId": null,
+            "notes": [],
+            "instanceType": "EligibilityCriterionItem"
+          }
+        ],
+        "organizations": [
+          {
+            "id": "Organization_1",
+            "extensionAttributes": [],
+            "name": "XYZ_PHARMA",
+            "label": "XYZ Pharmaceuticals Inc.",
+            "type": {
+              "id": "Code_20",
+              "extensionAttributes": [],
+              "code": "C54149",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Drug Company",
+              "instanceType": "Code"
+            },
+            "identifierScheme": "DUNS",
+            "identifier": "987654321",
+            "legalAddress": {
+              "id": "Address_1",
+              "extensionAttributes": [],
+              "text": "100 Research Boulevard, Cambridge, MA, 02142, United States of America",
+              "lines": [
+                "100 Research Boulevard"
+              ],
+              "city": "Cambridge",
+              "district": "",
+              "state": "MA",
+              "postalCode": "02142",
+              "country": {
+                "id": "Code_21",
+                "extensionAttributes": [],
+                "code": "USA",
+                "codeSystem": "ISO 3166 1 alpha3",
+                "codeSystemVersion": "2020-08",
+                "decode": "United States of America",
+                "instanceType": "Code"
+              },
+              "instanceType": "Address"
+            },
+            "managedSites": [],
+            "instanceType": "Organization"
+          },
+          {
+            "id": "Organization_2",
+            "extensionAttributes": [],
+            "name": "CT-GOV",
+            "label": "ClinicalTrials.gov",
+            "type": {
+              "id": "Code_22",
+              "extensionAttributes": [],
+              "code": "C93453",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Study Registry",
+              "instanceType": "Code"
+            },
+            "identifierScheme": "USGOV",
+            "identifier": "CT-GOV",
+            "legalAddress": {
+              "id": "Address_2",
+              "extensionAttributes": [],
+              "text": "8600 Rockville Pike, Bethesda, MD, 20894, United States of America",
+              "lines": [
+                "8600 Rockville Pike"
+              ],
+              "city": "Bethesda",
+              "district": "",
+              "state": "MD",
+              "postalCode": "20894",
+              "country": {
+                "id": "Code_23",
+                "extensionAttributes": [],
+                "code": "USA",
+                "codeSystem": "ISO 3166 1 alpha3",
+                "codeSystemVersion": "2020-08",
+                "decode": "United States of America",
+                "instanceType": "Code"
+              },
+              "instanceType": "Address"
+            },
+            "managedSites": [],
+            "instanceType": "Organization"
+          }
+        ],
+        "studyInterventions": [
+          {
+            "id": "StudyIntervention_1",
+            "extensionAttributes": [],
+            "name": "Compound-X",
+            "label": "Compound-X",
+            "description": "Compound-X, investigational agent, administered intravenously every 3 weeks in combination with standard of care chemotherapy",
+            "role": {
+              "id": "Code_600",
+              "extensionAttributes": [],
+              "code": "C41161",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Protocol Agent",
+              "instanceType": "Code"
+            },
+            "type": {
+              "id": "Code_601",
+              "extensionAttributes": [],
+              "code": "C1909",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Pharmacologic Substance",
+              "instanceType": "Code"
+            },
+            "minimumResponseDuration": {
+              "id": "Quantity_10",
+              "extensionAttributes": [],
+              "value": 21.0,
+              "unit": {
+                "id": "AliasCode_70",
+                "extensionAttributes": [],
+                "standardCode": {
+                  "id": "Code_602",
+                  "extensionAttributes": [],
+                  "code": "C25301",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Day",
+                  "instanceType": "Code"
+                },
+                "standardCodeAliases": [],
+                "instanceType": "AliasCode"
+              },
+              "instanceType": "Quantity"
+            },
+            "codes": [
+              {
+                "id": "Code_603",
+                "extensionAttributes": [],
+                "code": "COMPX001",
+                "codeSystem": "SPONSOR",
+                "codeSystemVersion": "1",
+                "decode": "Compound-X",
+                "instanceType": "Code"
+              }
+            ],
+            "administrations": [
+              {
+                "id": "Administration_1",
+                "extensionAttributes": [],
+                "name": "COMPX_IV_Q3W",
+                "label": "Compound-X IV Q3W",
+                "description": "Compound-X 200 mg IV every 3 weeks",
+                "duration": {
+                  "id": "Duration_1",
+                  "extensionAttributes": [],
+                  "text": "30-minute infusion",
+                  "quantity": {
+                    "id": "Quantity_11",
+                    "extensionAttributes": [],
+                    "value": 30.0,
+                    "unit": {
+                      "id": "AliasCode_71",
+                      "extensionAttributes": [],
+                      "standardCode": {
+                        "id": "Code_604",
+                        "extensionAttributes": [],
+                        "code": "C48154",
+                        "codeSystem": "http://www.cdisc.org",
+                        "codeSystemVersion": "2025-09-26",
+                        "decode": "Minute",
+                        "instanceType": "Code"
+                      },
+                      "standardCodeAliases": [],
+                      "instanceType": "AliasCode"
+                    },
+                    "instanceType": "Quantity"
+                  },
+                  "durationWillVary": false,
+                  "reasonDurationWillVary": "",
+                  "instanceType": "Duration"
+                },
+                "dose": {
+                  "id": "Quantity_12",
+                  "extensionAttributes": [],
+                  "value": 200.0,
+                  "unit": {
+                    "id": "AliasCode_72",
+                    "extensionAttributes": [],
+                    "standardCode": {
+                      "id": "Code_605",
+                      "extensionAttributes": [],
+                      "code": "C28253",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Milligram",
+                      "instanceType": "Code"
+                    },
+                    "standardCodeAliases": [],
+                    "instanceType": "AliasCode"
+                  },
+                  "instanceType": "Quantity"
+                },
+                "route": {
+                  "id": "AliasCode_73",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_606",
+                    "extensionAttributes": [],
+                    "code": "C38276",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Intravenous Route of Administration",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "frequency": {
+                  "id": "AliasCode_74",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_607",
+                    "extensionAttributes": [],
+                    "code": "C64576",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Every Three Weeks",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "administrableProductId": null,
+                "medicalDeviceId": null,
+                "notes": [],
+                "instanceType": "Administration"
+              }
+            ],
+            "notes": [],
+            "instanceType": "StudyIntervention"
+          },
+          {
+            "id": "StudyIntervention_2",
+            "extensionAttributes": [],
+            "name": "Placebo",
+            "label": "Placebo",
+            "description": "Matching placebo for Compound-X, administered intravenously every 3 weeks",
+            "role": {
+              "id": "Code_610",
+              "extensionAttributes": [],
+              "code": "C41161",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Protocol Agent",
+              "instanceType": "Code"
+            },
+            "type": {
+              "id": "Code_611",
+              "extensionAttributes": [],
+              "code": "C49676",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Placebo",
+              "instanceType": "Code"
+            },
+            "minimumResponseDuration": {
+              "id": "Quantity_20",
+              "extensionAttributes": [],
+              "value": 21.0,
+              "unit": {
+                "id": "AliasCode_80",
+                "extensionAttributes": [],
+                "standardCode": {
+                  "id": "Code_612",
+                  "extensionAttributes": [],
+                  "code": "C25301",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Day",
+                  "instanceType": "Code"
+                },
+                "standardCodeAliases": [],
+                "instanceType": "AliasCode"
+              },
+              "instanceType": "Quantity"
+            },
+            "codes": [],
+            "administrations": [
+              {
+                "id": "Administration_2",
+                "extensionAttributes": [],
+                "name": "PBO_IV_Q3W",
+                "label": "Placebo IV Q3W",
+                "description": "Matching placebo IV every 3 weeks",
+                "duration": {
+                  "id": "Duration_2",
+                  "extensionAttributes": [],
+                  "text": "30-minute infusion",
+                  "quantity": {
+                    "id": "Quantity_21",
+                    "extensionAttributes": [],
+                    "value": 30.0,
+                    "unit": {
+                      "id": "AliasCode_81",
+                      "extensionAttributes": [],
+                      "standardCode": {
+                        "id": "Code_613",
+                        "extensionAttributes": [],
+                        "code": "C48154",
+                        "codeSystem": "http://www.cdisc.org",
+                        "codeSystemVersion": "2025-09-26",
+                        "decode": "Minute",
+                        "instanceType": "Code"
+                      },
+                      "standardCodeAliases": [],
+                      "instanceType": "AliasCode"
+                    },
+                    "instanceType": "Quantity"
+                  },
+                  "durationWillVary": false,
+                  "reasonDurationWillVary": "",
+                  "instanceType": "Duration"
+                },
+                "dose": null,
+                "route": {
+                  "id": "AliasCode_82",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_614",
+                    "extensionAttributes": [],
+                    "code": "C38276",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Intravenous Route of Administration",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "frequency": {
+                  "id": "AliasCode_83",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_615",
+                    "extensionAttributes": [],
+                    "code": "C64576",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Every Three Weeks",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "administrableProductId": null,
+                "medicalDeviceId": null,
+                "notes": [],
+                "instanceType": "Administration"
+              }
+            ],
+            "notes": [],
+            "instanceType": "StudyIntervention"
+          },
+          {
+            "id": "StudyIntervention_3",
+            "extensionAttributes": [],
+            "name": "SoC Chemotherapy",
+            "label": "Standard of Care Chemotherapy",
+            "description": "Investigator choice of platinum-based doublet chemotherapy (carboplatin/pemetrexed for non-squamous or carboplatin/paclitaxel for squamous histology)",
+            "role": {
+              "id": "Code_620",
+              "extensionAttributes": [],
+              "code": "C41161",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Protocol Agent",
+              "instanceType": "Code"
+            },
+            "type": {
+              "id": "Code_621",
+              "extensionAttributes": [],
+              "code": "C1909",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Pharmacologic Substance",
+              "instanceType": "Code"
+            },
+            "minimumResponseDuration": {
+              "id": "Quantity_30",
+              "extensionAttributes": [],
+              "value": 21.0,
+              "unit": {
+                "id": "AliasCode_90",
+                "extensionAttributes": [],
+                "standardCode": {
+                  "id": "Code_622",
+                  "extensionAttributes": [],
+                  "code": "C25301",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Day",
+                  "instanceType": "Code"
+                },
+                "standardCodeAliases": [],
+                "instanceType": "AliasCode"
+              },
+              "instanceType": "Quantity"
+            },
+            "codes": [
+              {
+                "id": "Code_623",
+                "extensionAttributes": [],
+                "code": "L01XA02",
+                "codeSystem": "ATC",
+                "codeSystemVersion": "",
+                "decode": "carboplatin",
+                "instanceType": "Code"
+              }
+            ],
+            "administrations": [
+              {
+                "id": "Administration_3",
+                "extensionAttributes": [],
+                "name": "SOC_CHEMO_Q3W",
+                "label": "SoC Chemo IV Q3W",
+                "description": "Standard of care platinum-based doublet chemotherapy IV every 3 weeks for 4-6 cycles",
+                "duration": {
+                  "id": "Duration_3",
+                  "extensionAttributes": [],
+                  "text": "Per institutional standard",
+                  "quantity": null,
+                  "durationWillVary": true,
+                  "reasonDurationWillVary": "Duration varies by chemotherapy regimen per institutional practice",
+                  "instanceType": "Duration"
+                },
+                "dose": null,
+                "route": {
+                  "id": "AliasCode_91",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_624",
+                    "extensionAttributes": [],
+                    "code": "C38276",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Intravenous Route of Administration",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "frequency": {
+                  "id": "AliasCode_92",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_625",
+                    "extensionAttributes": [],
+                    "code": "C64576",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Every Three Weeks",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "administrableProductId": null,
+                "medicalDeviceId": null,
+                "notes": [],
+                "instanceType": "Administration"
+              }
+            ],
+            "notes": [],
+            "instanceType": "StudyIntervention"
+          }
+        ],
+        "biomedicalConcepts": [
+          {
+            "id": "BiomedicalConcept_1",
+            "extensionAttributes": [],
+            "name": "Subject Age",
+            "label": "Subject Age",
+            "synonyms": [
+              "Age"
+            ],
+            "reference": "/mdr/bc/packages/2025-04-01/biomedicalconcepts/C69260",
+            "properties": [
+              {
+                "id": "BiomedicalConceptProperty_1",
+                "extensionAttributes": [],
+                "name": "Numeric Age for Data Tabulation",
+                "label": "Numeric Age for Data Tabulation",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "decimal",
+                "responseCodes": [],
+                "code": {
+                  "id": "AliasCode_100",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_700",
+                    "extensionAttributes": [],
+                    "code": "C170981",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2024-09-27",
+                    "decode": "Numeric Age for Data Tabulation",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              }
+            ],
+            "code": {
+              "id": "AliasCode_101",
+              "extensionAttributes": [],
+              "standardCode": {
+                "id": "Code_701",
+                "extensionAttributes": [],
+                "code": "C69260",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2024-09-27",
+                "decode": "Subject Age",
+                "instanceType": "Code"
+              },
+              "standardCodeAliases": [],
+              "instanceType": "AliasCode"
+            },
+            "notes": [],
+            "instanceType": "BiomedicalConcept"
+          },
+          {
+            "id": "BiomedicalConcept_2",
+            "extensionAttributes": [],
+            "name": "Sex",
+            "label": "Sex",
+            "synonyms": [],
+            "reference": "/mdr/bc/packages/2025-04-01/biomedicalconcepts/C28421",
+            "properties": [
+              {
+                "id": "BiomedicalConceptProperty_2",
+                "extensionAttributes": [],
+                "name": "Sex",
+                "label": "Sex",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "string",
+                "responseCodes": [
+                  {
+                    "id": "ResponseCode_1",
+                    "extensionAttributes": [],
+                    "name": "RC_MALE",
+                    "label": "Male",
+                    "isEnabled": true,
+                    "code": {
+                      "id": "Code_710",
+                      "extensionAttributes": [],
+                      "code": "C20197",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2024-09-27",
+                      "decode": "Male",
+                      "instanceType": "Code"
+                    },
+                    "instanceType": "ResponseCode"
+                  },
+                  {
+                    "id": "ResponseCode_2",
+                    "extensionAttributes": [],
+                    "name": "RC_FEMALE",
+                    "label": "Female",
+                    "isEnabled": true,
+                    "code": {
+                      "id": "Code_711",
+                      "extensionAttributes": [],
+                      "code": "C16576",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2024-09-27",
+                      "decode": "Female",
+                      "instanceType": "Code"
+                    },
+                    "instanceType": "ResponseCode"
+                  }
+                ],
+                "code": {
+                  "id": "AliasCode_102",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_712",
+                    "extensionAttributes": [],
+                    "code": "C28421",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2024-09-27",
+                    "decode": "Sex",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              }
+            ],
+            "code": {
+              "id": "AliasCode_103",
+              "extensionAttributes": [],
+              "standardCode": {
+                "id": "Code_713",
+                "extensionAttributes": [],
+                "code": "C28421",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2024-09-27",
+                "decode": "Sex",
+                "instanceType": "Code"
+              },
+              "standardCodeAliases": [],
+              "instanceType": "AliasCode"
+            },
+            "notes": [],
+            "instanceType": "BiomedicalConcept"
+          },
+          {
+            "id": "BiomedicalConcept_3",
+            "extensionAttributes": [],
+            "name": "Vital Signs",
+            "label": "Vital Signs",
+            "synonyms": [
+              "VS"
+            ],
+            "reference": "/mdr/bc/packages/2025-04-01/biomedicalconcepts/C67153",
+            "properties": [
+              {
+                "id": "BiomedicalConceptProperty_3",
+                "extensionAttributes": [],
+                "name": "Vital Signs Result",
+                "label": "Vital Signs Result",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "decimal",
+                "responseCodes": [],
+                "code": {
+                  "id": "AliasCode_104",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_720",
+                    "extensionAttributes": [],
+                    "code": "C67153",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2024-09-27",
+                    "decode": "Vital Signs Result",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              }
+            ],
+            "code": {
+              "id": "AliasCode_105",
+              "extensionAttributes": [],
+              "standardCode": {
+                "id": "Code_721",
+                "extensionAttributes": [],
+                "code": "C67153",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2024-09-27",
+                "decode": "Vital Signs",
+                "instanceType": "Code"
+              },
+              "standardCodeAliases": [],
+              "instanceType": "AliasCode"
+            },
+            "notes": [],
+            "instanceType": "BiomedicalConcept"
+          },
+          {
+            "id": "BiomedicalConcept_4",
+            "extensionAttributes": [],
+            "name": "Tumor Assessment",
+            "label": "Tumor Assessment",
+            "synonyms": [
+              "RECIST",
+              "Tumor Response"
+            ],
+            "reference": "/mdr/bc/packages/2025-04-01/biomedicalconcepts/C94523",
+            "properties": [
+              {
+                "id": "BiomedicalConceptProperty_4",
+                "extensionAttributes": [],
+                "name": "Tumor Response",
+                "label": "Tumor Response",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "string",
+                "responseCodes": [
+                  {
+                    "id": "ResponseCode_3",
+                    "extensionAttributes": [],
+                    "name": "RC_CR",
+                    "label": "Complete Response",
+                    "isEnabled": true,
+                    "code": {
+                      "id": "Code_730",
+                      "extensionAttributes": [],
+                      "code": "C4870",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2024-09-27",
+                      "decode": "Complete Response",
+                      "instanceType": "Code"
+                    },
+                    "instanceType": "ResponseCode"
+                  },
+                  {
+                    "id": "ResponseCode_4",
+                    "extensionAttributes": [],
+                    "name": "RC_PR",
+                    "label": "Partial Response",
+                    "isEnabled": true,
+                    "code": {
+                      "id": "Code_731",
+                      "extensionAttributes": [],
+                      "code": "C18058",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2024-09-27",
+                      "decode": "Partial Response",
+                      "instanceType": "Code"
+                    },
+                    "instanceType": "ResponseCode"
+                  },
+                  {
+                    "id": "ResponseCode_5",
+                    "extensionAttributes": [],
+                    "name": "RC_SD",
+                    "label": "Stable Disease",
+                    "isEnabled": true,
+                    "code": {
+                      "id": "Code_732",
+                      "extensionAttributes": [],
+                      "code": "C18213",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2024-09-27",
+                      "decode": "Stable Disease",
+                      "instanceType": "Code"
+                    },
+                    "instanceType": "ResponseCode"
+                  },
+                  {
+                    "id": "ResponseCode_6",
+                    "extensionAttributes": [],
+                    "name": "RC_PD",
+                    "label": "Progressive Disease",
+                    "isEnabled": true,
+                    "code": {
+                      "id": "Code_733",
+                      "extensionAttributes": [],
+                      "code": "C35571",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2024-09-27",
+                      "decode": "Progressive Disease",
+                      "instanceType": "Code"
+                    },
+                    "instanceType": "ResponseCode"
+                  }
+                ],
+                "code": {
+                  "id": "AliasCode_106",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_734",
+                    "extensionAttributes": [],
+                    "code": "C94523",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2024-09-27",
+                    "decode": "Tumor Response",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              }
+            ],
+            "code": {
+              "id": "AliasCode_107",
+              "extensionAttributes": [],
+              "standardCode": {
+                "id": "Code_735",
+                "extensionAttributes": [],
+                "code": "C94523",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2024-09-27",
+                "decode": "Tumor Assessment",
+                "instanceType": "Code"
+              },
+              "standardCodeAliases": [],
+              "instanceType": "AliasCode"
+            },
+            "notes": [],
+            "instanceType": "BiomedicalConcept"
+          }
+        ],
+        "notes": [],
+        "instanceType": "StudyVersion"
+      }
+    ],
+    "documentedBy": [],
+    "instanceType": "Study"
+  },
+  "usdmVersion": "4.0.0",
+  "systemName": "USDM Study Digitization Architect",
+  "systemVersion": "1.0.0"
+}
